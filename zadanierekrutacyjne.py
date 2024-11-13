@@ -1,10 +1,8 @@
 from openai import OpenAI
-import openai
 import os
-client = OpenAI()
 
 # Ustawienie klucza API
-openai.api_key = os.getenv('OPENAI_API_KEY')
+client = OpenAI(api_key = os.getenv('OPENAI_API_KEY'))
 
 # Wczytanie artykułu z pliku (dla nazwy: tekst.txt)
 with open('tekst.txt', 'r', encoding='utf-8') as file:
