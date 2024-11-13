@@ -31,3 +31,5 @@ kod_html = response.choices[0].message.content
 
 with open('artykul.html', 'w', encoding='utf-8') as file:
     file.write(kod_html)
+
+print("Wygenerowano plik artykul.html")
