@@ -53,6 +53,7 @@ Dodatkowo, przygotowany jest szablon 'szablon.html', służący do podglądu art
    ```
 
 6. **Podgląd pliku:**
-   W celu sprawdzenia zawartości wygenerowanego pliku, należy go uruchomić (domyślnie odbywa się to za pośrednictwem przeglądarki internetowej lub edytora tekstu), lub można skorzystać z programu podglądowego, do którego link znajduje się powyżej w opisie działania.
+
+W celu sprawdzenia zawartości wygenerowanego pliku, należy go uruchomić (domyślnie odbywa się to za pośrednictwem przeglądarki internetowej lub edytora tekstu), lub można skorzystać z programu podglądowego, do którego link znajduje się powyżej w opisie działania.
 
 
