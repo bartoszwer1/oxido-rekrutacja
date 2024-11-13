@@ -21,6 +21,7 @@ Przekształć poniższy tekst artykułu na kod HTML zgodnie z następującymi wy
 - Użyj odpowiednich tagów HTML do strukturyzacji treści.
 - Określ miejsca, gdzie warto wstawić grafiki – oznacz je z użyciem tagu <img> z atrybutem src="image_placeholder.jpg". Dodaj atrybut alt do każdego obrazka z dokładnym promptem, który możemy użyć do wygenerowania grafiki. Umieść podpisy pod grafikami używając odpowiedniego tagu HTML.
 - Nie dodawaj kodu CSS ani JavaScript. Zwróć tylko kod do wstawienia pomiędzy <body> i </body>. Nie dołączaj znaczników <html>, <head> ani <body>.
+- Nie dodawaj do wygenerowanego pliku znaczników takich jak ```html.
 """
     },
     {
@@ -29,7 +30,7 @@ Przekształć poniższy tekst artykułu na kod HTML zgodnie z następującymi wy
     }
 ]
 
-# Wywołanie API CharCompletion, stworzenie odpowiedzi, określenie modelu, przekazanie promptu
+# Wywołanie API ChatCompletion, stworzenie odpowiedzi, określenie modelu, przekazanie promptu
 response = client.chat.completions.create(
     model="gpt-4o",
     messages=messages,
