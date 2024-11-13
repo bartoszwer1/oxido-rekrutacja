@@ -6,7 +6,8 @@ Aplikacja wczytuje tekst artykułu z pliku 'tekst.txt', następnie wysyła go wr
 
 Dodatkowo, przygotowany jest szablon 'szablon.html', służący do podglądu artykułu oraz pełny podgląd w pliku 'podgląd.html'. Całość znajduje się pod linkiem:
 
-[Podgląd zrealizowanego programu](https://bartoszwer1.github.io/oxido-rekrutacja-podglad.github.io/).
+[Podgląd zrealizowanego programu](https://bartoszwer1.github.io/oxido-rekrutacja-podglad.github.io/)
+
 [Link do repozytorium - kod źródłowy szablonu i podglądu](https://github.com/bartoszwer1/oxido-rekrutacja-podglad.github.io)
 
 ## Instrukcja uruchomienia
