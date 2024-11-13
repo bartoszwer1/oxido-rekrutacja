@@ -16,8 +16,8 @@ messages = [
         "content": """
 Przekształć poniższy tekst artykułu na kod HTML zgodnie z następującymi wytycznymi:
 - Popraw tekst artykułu tak aby usunąć znaki wynikające z konwersji pliku takie jak Ä‡ Å¼ Ä™ Ä™
-- Użyj odpowiednich tagów HTML do strukturyzacji treści.
-- Określ miejsca, gdzie warto wstawić grafiki – oznacz je z użyciem tagu <img> z atrybutem src="image_placeholder.jpg". Dodaj atrybut alt w języku polskim do każdego obrazka z dokładnym promptem, który możemy użyć do wygenerowania grafiki. Umieść podpisy pod grafikami używając odpowiedniego tagu HTML.
+- Użyj odpowiednich tagów HTML do strukturyzacji treści i odpowiednich elementów w celu uzyskania semantycznie poprawnego kodu.
+- Określ miejsca, gdzie warto wstawić grafiki – oznacz je z użyciem tagu <img> z atrybutem src="image_placeholder.jpg". Dodaj atrybut alt do każdego obrazka z dokładnym promptem, który możemy użyć do wygenerowania grafiki. Umieść podpisy pod grafikami używając odpowiedniego tagu HTML.
 - Nie dodawaj kodu CSS ani JavaScript. Zwróć tylko kod do wstawienia pomiędzy <body> i </body>. Nie dołączaj znaczników <html>, <head> ani <body>.
 - Nie dodawaj do wygenerowanego pliku znaczników takich jak ```html.
 """
