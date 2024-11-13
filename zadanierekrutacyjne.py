@@ -8,7 +8,7 @@ client = OpenAI(api_key = os.getenv('OPENAI_API_KEY'))
 with open('tekst.txt', 'r', encoding='utf-8') as file:
     tekst_artykulu = file.read()
 
-# Przygotowanie wiadomości dla modelu OpenAI, 
+# Przygotowanie wiadomości dla modelu OpenAI,
 # określenie charakteru odpowiedzi i treści użytkownika - w tym przypadku artykul
 messages = [
     {
@@ -16,10 +16,10 @@ messages = [
         "content": """
 Przekształć poniższy tekst artykułu na kod HTML zgodnie z następującymi wytycznymi:
 - Popraw tekst artykułu tak aby usunąć znaki wynikające z konwersji pliku takie jak Ä‡ Å¼ Ä™ Ä™
-- Użyj odpowiednich tagów HTML do strukturyzacji treści i odpowiednich elementów w celu uzyskania semantycznie poprawnego kodu.
+- Użyj odpowiednich tagów HTML do strukturyzacji treści i odpowiednich elementów w celu uzyskania semantycznie poprawnego kodu takich jak <figcaption> <main> <footer> <article> <section> i inne.
 - Określ miejsca, gdzie warto wstawić grafiki – oznacz je z użyciem tagu <img> z atrybutem src="image_placeholder.jpg". Dodaj atrybut alt do każdego obrazka z dokładnym promptem, który możemy użyć do wygenerowania grafiki. Umieść podpisy pod grafikami używając odpowiedniego tagu HTML.
 - Nie dodawaj kodu CSS ani JavaScript. Zwróć tylko kod do wstawienia pomiędzy <body> i </body>. Nie dołączaj znaczników <html>, <head> ani <body>.
-- Nie dodawaj do wygenerowanego pliku znaczników takich jak ```html.
+- Nie dodawaj do wygenerowanego pliku znaczników takich jak ```html, nie generuj ich jako message content.
 """
     },
     {
@@ -28,9 +28,9 @@ Przekształć poniższy tekst artykułu na kod HTML zgodnie z następującymi wy
     }
 ]
 
-# Wywołanie API ChatCompletion, stworzenie odpowiedzi, określenie modelu, przekazanie promptu
+# Wywołanie API CharCompletion, stworzenie odpowiedzi, określenie modelu, przekazanie promptu
 response = client.chat.completions.create(
-    model="gpt-4o", # Rozważyć model o1
+    model="gpt-4o",
     messages=messages,
 )
 
