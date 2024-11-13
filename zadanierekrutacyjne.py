@@ -32,7 +32,7 @@ Przekształć poniższy tekst artykułu na kod HTML zgodnie z następującymi wy
 
 # Wywołanie API ChatCompletion, stworzenie odpowiedzi, określenie modelu, przekazanie promptu
 response = client.chat.completions.create(
-    model="gpt-4o",
+    model="gpt-4o", # Rozważyć model o1
     messages=messages,
 )
 
