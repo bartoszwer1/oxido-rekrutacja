@@ -45,3 +45,12 @@ Dodatkowo, przygotowany jest szablon 'szablon.html', służący do podglądu art
    python3 zadanierekrutacyjne.py
    ```
    Po uruchomieniu aplikacji należy poczekać na zakończenie pracy programu. 
+   Zakończenie działania programu zostanie zwróceniem informacji:
+   ```bash
+   Wygenerowano plik artykul.html
+   ```
+
+6. **Podgląd pliku:**
+   W celu sprawdzenia zawartości wygenerowanego pliku, należy go uruchomić (domyślnie odbywa się to za pośrednictwem przeglądarki internetowej lub edytora tekstu), lub można skorzystać z programu podglądowego, do którego link znajduje się powyżej w opisie działania.
+
+
